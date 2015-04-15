@@ -12,7 +12,7 @@ Esta LIB é um jar simples que só funciona no ambiente Android, portanto, embor
 Requisitos para utilizar a LIB em seu projeto Android
 -----------------------------------------------------
 
- - [Android] 2.3.+
+ - [Android] 3.0.+ (SDK Version 11 ou superior)
  - [GSon]
  - Configurar a dependência do GSON + Lib PagSeguro (via Maven, gradle ou download)
 
