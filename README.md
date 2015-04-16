@@ -81,7 +81,7 @@ Chamada de pagamento a ser adicionada:
                                       .withBuyerCellphoneNumber("5511992190364")                // Telefone do comprador
                                       .withReferenceCode("123")                                 // Codigo que é utilizado apenas pelo vendedor, para referencia de transação
                                       .withEnvironment(PagSeguro.Environment.PRODUCTION)        // Ambiente que será usado: PRODUCTION, MOCK_SUCCESS ou MOCK_ERROR
-                                      .withAuthorization("SEU_EMAIL@NO_PAG_SEGURO.COM", "codigo obtido na home do pagseguro, dentro do seu ibank"),
+                                      .withAuthorization("SEU_EMAIL@NO_PAGSEGURO.COM", "codigo obtido na home do pagseguro, dentro do seu ibank"),
                 getActivity(),
                 R.id.container,                                                                 // Id do fragment/view onde serão desenhadas as telas de checkout
                 new PagSeguro.PagSeguroListener() {
