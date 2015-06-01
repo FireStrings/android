@@ -5,4 +5,34 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <color name="text_color">#666666</color>
+
+    <!-- Teclas verdes -->
+    <color name="keyboard_key_green_outline">#36AD45</color>
+    <color name="keyboard_key_green_light">#83C658</color>
+    <color name="keyboard_key_green_top">#6EBD45</color>
+    <color name="keyboard_key_green_bottom">#61AD45</color>
+    <color name="keyboard_key_green_number">#F2F2F2</color>
+    <color name="keyboard_key_green_top_pressed">#6A9E47</color>
+    <color name="keyboard_key_green_bottom_pressed">#73AC4D</color>
+
+    <!-- BOTÕES -->
+    <!-- Botão padrao -->
+    <style name="default_button">
+        <item name="android:padding">6dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Botão verde -->
+    <style name="green_button" parent="@style/default_button">
+        <item name="android:background">@drawable/keyboard_button_green</item>
+        <item name="android:shadowColor">@color/text_color</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
 </resources>

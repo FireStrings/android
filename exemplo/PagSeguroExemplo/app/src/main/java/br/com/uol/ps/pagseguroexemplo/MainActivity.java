@@ -2,13 +2,14 @@ package br.com.uol.ps.pagseguroexemplo;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import java.math.BigDecimal;
@@ -17,7 +18,10 @@ import br.com.uol.ps.library.PagSeguro;
 import br.com.uol.ps.library.PagSeguroRequest;
 import br.com.uol.ps.library.PagSeguroResponse;
 
-
+/**
+ * @author Jean Rodrigo Dalbon Cunha
+ *         cin_jcunha@uolinc.com
+ */
 public class MainActivity extends ActionBarActivity {
 
 
@@ -45,6 +49,8 @@ public class MainActivity extends ActionBarActivity {
     public static class PlaceholderFragment extends Fragment {
         private Button fiftyCent;
         private Button oneReal;
+        private EditText edtPaymentValue;
+
 
         public PlaceholderFragment() {
         }
@@ -56,6 +62,8 @@ public class MainActivity extends ActionBarActivity {
 
             oneReal = (Button) rootView.findViewById(R.id.one_real);
             oneReal.setOnClickListener(payWithPagSeguro());
+            edtPaymentValue = (EditText) rootView.findViewById(R.id.payment_value);
+
 
             return rootView;
         }
@@ -64,25 +72,30 @@ public class MainActivity extends ActionBarActivity {
             return new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+
+                    BigDecimal amount = new BigDecimal(edtPaymentValue.getText().toString());
+                    //quantidade de parcelas
+                    int quantityParcel = 1;
                     PagSeguro.pay(new PagSeguroRequest()
-                                    .withNewItem("Item Description", 1.0, new BigDecimal(1.00))
+                                    .withNewItem("Item Description", quantityParcel, amount)
                                     .withVendorEmail("seu email cadastrado no pagseguro")
                                     .withBuyerEmail("comprador@mail.com.br")
-                                    .withBuyerCellphoneNumber("5511992190364")
+                                    .withBuyerCellphoneNumber("5511000000000")
                                     .withReferenceCode("123")
                                     .withEnvironment(PagSeguro.Environment.PRODUCTION)
                                     .withAuthorization("seu email de login no pagseguro", "codigo obtido no pagseguro.uol.com.br"),
+
                             getActivity(),
                             R.id.container,
                             new PagSeguro.PagSeguroListener() {
                                 @Override
                                 public void onSuccess(PagSeguroResponse response, Context context) {
-                                    Toast.makeText(context, "Lib PS retornou pagamento aprovado!", Toast.LENGTH_LONG).show();
+                                    Toast.makeText(context, "Lib PS retornou pagamento aprovado! " + response, Toast.LENGTH_LONG).show();
                                 }
 
                                 @Override
                                 public void onFailure(PagSeguroResponse response, Context context) {
-                                    Toast.makeText(context, "Lib PS retornou FALHA no pagamento!", Toast.LENGTH_LONG).show();
+                                    Toast.makeText(context, "Lib PS retornou FALHA no pagamento! " + response, Toast.LENGTH_LONG).show();
                                 }
                             });
 

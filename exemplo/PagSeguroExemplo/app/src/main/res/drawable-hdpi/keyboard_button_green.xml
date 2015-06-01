@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><layer-list>
+        <item><shape>
+            <padding android:bottom="@dimen/border_light_spacing" android:left="@dimen/border_light_spacing" android:right="@dimen/border_light_spacing" android:top="@dimen/border_light_spacing" />
+
+            <gradient android:angle="270" android:endColor="@color/keyboard_key_green_bottom_pressed" android:startColor="@color/keyboard_key_green_light" />
+
+            <stroke android:width="1dp" android:color="@color/keyboard_key_green_outline" />
+        </shape></item>
+        <item><shape>
+            <gradient android:angle="270" android:endColor="@color/keyboard_key_green_bottom_pressed" android:startColor="@color/keyboard_key_green_top_pressed" />
+        </shape></item>
+    </layer-list></item>
+    <item android:state_pressed="false"><layer-list>
+        <item><shape>
+            <padding android:bottom="@dimen/border_light_spacing" android:left="@dimen/border_light_spacing" android:right="@dimen/border_light_spacing" android:top="@dimen/border_light_spacing" />
+
+            <gradient android:angle="270" android:endColor="@color/keyboard_key_green_bottom" android:startColor="@color/keyboard_key_green_light" />
+
+            <stroke android:width="1dp" android:color="@color/keyboard_key_green_outline" />
+        </shape></item>
+        <item><shape>
+            <gradient android:angle="270" android:endColor="@color/keyboard_key_green_bottom" android:startColor="@color/keyboard_key_green_top" />
+        </shape></item>
+    </layer-list></item>
+
+</selector>
