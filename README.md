@@ -34,7 +34,7 @@ Baixe o [último JAR][1] ou obtenha via Maven:
 <dependency>
     <groupId>br.com.uol.ps</groupId>
     <artifactId>library</artifactId>
-    <version>0.6</version>
+    <version>0.7</version>
 </dependency>
 ```
 
