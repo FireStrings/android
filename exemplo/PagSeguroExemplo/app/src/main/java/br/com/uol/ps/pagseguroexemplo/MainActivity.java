@@ -47,8 +47,7 @@ public class MainActivity extends ActionBarActivity {
      * A placeholder fragment containing a simple view.
      */
     public static class PlaceholderFragment extends Fragment {
-        private Button fiftyCent;
-        private Button oneReal;
+        Button btnCallPayment;
         private EditText edtPaymentValue;
 
 
@@ -60,8 +59,8 @@ public class MainActivity extends ActionBarActivity {
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
-            oneReal = (Button) rootView.findViewById(R.id.one_real);
-            oneReal.setOnClickListener(payWithPagSeguro());
+            btnCallPayment = (Button) rootView.findViewById(R.id.button_call_payment);
+            btnCallPayment.setOnClickListener(payWithPagSeguro());
             edtPaymentValue = (EditText) rootView.findViewById(R.id.payment_value);
 
 
@@ -80,6 +79,7 @@ public class MainActivity extends ActionBarActivity {
                                     .withNewItem("Item Description", quantityParcel, amount)
                                     .withVendorEmail("seu email cadastrado no pagseguro")
                                     .withBuyerEmail("comprador@mail.com.br")
+                                    .withBuyerCPF("00000000000")
                                     .withBuyerCellphoneNumber("5511000000000")
                                     .withReferenceCode("123")
                                     .withEnvironment(PagSeguro.Environment.PRODUCTION)
