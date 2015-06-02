@@ -149,6 +149,11 @@ Caso tenha dúvidas ou precise de suporte, acesse nosso [fórum].
 
 Changelog
 ---------
+0.7
+ - Correções de bugs
+ - Ajuste componente NumberPicker
+ - Melhorias no aplicativo de exemplo (permite inserir valor da venda)
+  
 0.6
  - Versão compatível com Lollipop 5.0.1 (#21)
  - Migrada estrutura do projeto para Android Studio 1.0.0
