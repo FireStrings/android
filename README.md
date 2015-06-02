@@ -54,7 +54,7 @@ repositories {
 
 dependencies {
     ...
-    compile 'br.com.uol.ps:library:0.4'
+    compile 'br.com.uol.ps:library:0.7'
     compile 'com.google.code.gson:gson:+'
     ...
 }
