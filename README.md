@@ -152,13 +152,6 @@ Somente com este jar, sem nenhuma configuração de telas ou Lib, o fluxo de pag
 
 A taxa de conversão com certeza será maior para o fluxo onde o usuário do seu aplicativo tenha instalado e logado no aplicativo Carteira do PagSeguro: https://play.google.com/store/apps/details?id=br.com.uol.ps.wallet, pois o fluxo de pagamento fica em apenas 2 passos: Clicar em pagar e selecionar o cartão já previamente cadastrado no PagSeguro e PRONTO! Em futuras versões melhoraremos ainda mais este fluxo para que o pagamento de seu produto/serviço seja o mais fácil possível de o usuário pagar e assim mais conversões de venda para seu negócio.
 
-
-Dúvidas?
-----------
----
-Caso tenha dúvidas ou precise de suporte, acesse nosso [fórum].
-
-
 FAQ
 ---------------
 ---
@@ -234,10 +227,12 @@ Notas
  - Para que ocorra normalmente a geração de logs, certifique-se que o diretório e o arquivo de log tenham permissões de leitura e escrita.
 
 
-[Dúvidas?]
+Dúvidas?
 ----------
 
-Em caso de dúvidas mande um e-mail para desenvolvedores@pagseguro.com.br
+Caso tenha dúvidas ou precise de suporte, acesse nosso [fórum]. ou
+mande um e-mail para desenvolvedores@pagseguro.com.br
+
 
 
 Contribuições
