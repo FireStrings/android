@@ -147,6 +147,22 @@ Dúvidas?
 Caso tenha dúvidas ou precise de suporte, acesse nosso [fórum].
 
 
+FAQ
+---------------
+<b>É possivel realizar parcelamento?</b>
+<br>No momento nossa solução não abrange tal recurso, em futuras implementações pretendemos adicionar o recurso, iremos melhorar cade vez mais a solução enriquecendo e facilitando a sua utilização.
+
+<b>O jar pode ser utilizado em qualquer projeto?</b>
+<br>
+-Esta LIB é um jar simples que só funciona no ambiente Android, portanto, embora seja JAR não é possivel utilizá-la em um ambiente JAVA SE ou mesmo JAVA EE.
+
+<b>Qual as especificações minimas para utilização no Android?</b>
+<br>[Android] 3.0.+ (SDK Version 11 ou superior)
+<br>Configurar a dependência do GSON + Lib PagSeguro (via Maven, gradle ou download)
+
+
+
+
 Changelog
 ---------
 0.7
