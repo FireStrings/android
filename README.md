@@ -256,7 +256,9 @@ Achou e corrigiu um bug ou tem alguma feature em mente e deseja contribuir?
   [GitHub]: https://github.com/pagseguro/php/
   
   
-  **UOL - O melhor conteúdo**
+* **
+
+**UOL - O melhor conteúdo**
 
 © 1996-2015 O melhor conteúdo. Todos os direitos reservados.
 UNIVERSO ONLINE S/A - CNPJ/MF 01.109.184/0001-95 - Av. Brigadeiro Faria Lima, 1.384, São Paulo - SP - CEP 01452-002 
