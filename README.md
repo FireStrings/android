@@ -218,7 +218,7 @@ Achou e corrigiu um bug ou tem alguma feature em mente e deseja contribuir?
 * Adicione sua feature ou correção de bug.
 * Envie um pull request no [GitHub].
 
-  [1]: https://raw.githubusercontent.com/pagseguro/android/mvn-repo/br/com/uol/ps/library/0.4/library-0.4.jar
+  [1]: https://raw.githubusercontent.com/pagseguro/android/mvn-repo/br/com/uol/ps/library/0.7/library-0.7.jar
   [Android]: http://www.android.com/
   [GSon]: https://code.google.com/p/google-gson/
   [fórum]: http://forum.pagseguro.uol.com.br/
