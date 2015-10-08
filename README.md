@@ -155,13 +155,13 @@ A taxa de conversão com certeza será maior para o fluxo onde o usuário do seu
 FAQ
 ---------------
 ---
-<b>Qual as especificações minimas para utilização no Android?</b>
+<b>Qual as especificações mínimas para utilização no Android?</b>
 <br>[Android] 3.0.+ (SDK Version 11 ou superior)
 <br>Configurar a dependência do GSON + Lib PagSeguro (via Maven, gradle ou download)
 
-<b>O jar pode ser utilizado em qualquer projeto?</b>
+<b>A Library .jar pode ser utilizada em qualquer projeto sem ser Android?</b>
 <br>
-Esta LIB é um jar simples que só funciona no ambiente Android, portanto, embora seja JAR não é possivel utilizá-la em um ambiente JAVA SE ou mesmo JAVA EE.
+Esta LIB é um jar simples que só funciona no ambiente Android, portanto, embora seja JAR não é possível utilizá-la em um ambiente JAVA SE ou mesmo JAVA EE.
 
 <b>É possivel realizar parcelamento?</b>
 <br>No momento nossa solução não abrange tal recurso, em futuras implementações pretendemos adicionar o recurso, iremos melhorar cade vez mais a solução enriquecendo e facilitando a sua utilização.
@@ -230,7 +230,7 @@ Notas
 Dúvidas?
 ----------
 
-Caso tenha dúvidas ou precise de suporte, acesse nosso [fórum]. ou
+Caso tenha dúvidas ou precise de suporte, acesse nosso [fórum] ou
 mande um e-mail para desenvolvedores@pagseguro.com.br
 
 
