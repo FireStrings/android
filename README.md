@@ -166,7 +166,7 @@ Esta LIB é um jar simples que só funciona no ambiente Android, portanto, embor
 <b>É possivel realizar parcelamento?</b>
 <br>No momento nossa solução não abrange tal recurso, em futuras implementações pretendemos adicionar o recurso, iremos melhorar cade vez mais a solução enriquecendo e facilitando a sua utilização.
 
-<b>Estou com um problema, Porque o valor da venda sempre esta sendo passado com R$ 1,00?</b>
+<b>Estou com um problema, porque o valor da venda sempre esta sendo passado com R$ 1,00?</b>
 <br>
 Caso esteja com esse problema, atualize a versão da lib para 0.7v pois esse problema foi corrigido, a versão 0.6v apresentava essa falha. (Consulte o changelog na documentação com caracteristicas das versões)
 
