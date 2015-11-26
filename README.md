@@ -46,7 +46,7 @@ Baixe o [último JAR][1] ou obtenha via Maven:
 <dependency>
     <groupId>br.com.uol.ps</groupId>
     <artifactId>library</artifactId>
-    <version>0.7</version>
+    <version>0.8</version>
 </dependency>
 ```
 
@@ -66,7 +66,7 @@ repositories {
 
 dependencies {
     ...
-    compile 'br.com.uol.ps:library:0.7'
+    compile 'br.com.uol.ps:library:0.8'
     compile 'com.google.code.gson:gson:+'
     ...
 }
@@ -173,6 +173,10 @@ Caso esteja com esse problema, atualize a versão da lib para 0.7v pois esse pro
 
 Changelog
 ---------
+0.8
+ - Correções de bugs
+ - Ajuste componente NumberPicker, inicia com a data (mês/ano) atual.
+
 0.7
  - Correções de bugs
  - Ajuste componente NumberPicker
