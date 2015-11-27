@@ -1,3 +1,15 @@
+![ps5.png](https://bitbucket.org/repo/4naLKz/images/1051242651-ps5.png)
+
+## **Copyright** ##
+Todos os direitos reservados. O UOL é uma marca comercial do UNIVERSO ONLINE S / A. O logotipo do UOL é uma marca comercial do UNIVERSO ONLINE S / A. Outras marcas, nomes, logotipos e marcas são de propriedade de seus respectivos proprietários.
+As informações contidas neste documento pertencem ao UNIVERSO ONLINE S/A. Todos os direitos reservados. UNIVERSO ONLINE S/A. - Av. Faria Lima, 1384, 6º andar, São Paulo / SP, CEP 01452-002, Brasil.
+O serviço PagSeguro não é, nem pretende ser comparável a serviços financeiros oferecidos por instituições financeiras ou administradoras de cartões de crédito, consistindo apenas de uma forma de facilitar e monitorar a execução das transações de comércio electrónico através da gestão de pagamentos. Qualquer transação efetuada através do PagSeguro está sujeita e deve estar em conformidade com as leis da República Federativa do Brasil.
+Aconselhamos que você leia os termos e condições cuidadosamente.
+
+
+## **Aviso Legal** ##
+O UOL não oferece garantias de qualquer tipo (expressas, implícitas ou estatutárias) com relação às informações nele contidas. O UOL não assume nenhuma responsabilidade por perdas e danos (diretos ou indiretos), causados por erros ou omissões, ou resultantes da utilização deste documento ou a informação contida neste documento ou resultantes da aplicação ou uso do produto ou serviço aqui descrito. O UOL reserva o direito de fazer qualquer tipo de alterações a quaisquer informações aqui contidas sem aviso prévio.
+
 Biblioteca de integração PagSeguro para Android
 ===============================================
 
@@ -34,7 +46,7 @@ Baixe o [último JAR][1] ou obtenha via Maven:
 <dependency>
     <groupId>br.com.uol.ps</groupId>
     <artifactId>library</artifactId>
-    <version>0.7</version>
+    <version>0.8</version>
 </dependency>
 ```
 
@@ -54,7 +66,7 @@ repositories {
 
 dependencies {
     ...
-    compile 'br.com.uol.ps:library:0.4'
+    compile 'br.com.uol.ps:library:0.8'
     compile 'com.google.code.gson:gson:+'
     ...
 }
@@ -140,15 +152,31 @@ Somente com este jar, sem nenhuma configuração de telas ou Lib, o fluxo de pag
 
 A taxa de conversão com certeza será maior para o fluxo onde o usuário do seu aplicativo tenha instalado e logado no aplicativo Carteira do PagSeguro: https://play.google.com/store/apps/details?id=br.com.uol.ps.wallet, pois o fluxo de pagamento fica em apenas 2 passos: Clicar em pagar e selecionar o cartão já previamente cadastrado no PagSeguro e PRONTO! Em futuras versões melhoraremos ainda mais este fluxo para que o pagamento de seu produto/serviço seja o mais fácil possível de o usuário pagar e assim mais conversões de venda para seu negócio.
 
-
-Dúvidas?
-----------
+FAQ
+---------------
 ---
-Caso tenha dúvidas ou precise de suporte, acesse nosso [fórum].
+<b>Qual as especificações mínimas para utilização no Android?</b>
+<br>[Android] 3.0.+ (SDK Version 11 ou superior)
+<br>Configurar a dependência do GSON + Lib PagSeguro (via Maven, gradle ou download)
+
+<b>A Library .jar pode ser utilizada em qualquer projeto sem ser Android?</b>
+<br>
+Esta LIB é um jar simples que só funciona no ambiente Android, portanto, embora seja JAR não é possível utilizá-la em um ambiente JAVA SE ou mesmo JAVA EE.
+
+<b>É possivel realizar parcelamento?</b>
+<br>No momento nossa solução não abrange tal recurso, em futuras implementações pretendemos adicionar o recurso, iremos melhorar cade vez mais a solução enriquecendo e facilitando a sua utilização.
+
+<b>Estou com um problema, porque o valor da venda sempre esta sendo passado com R$ 1,00?</b>
+<br>
+Caso esteja com esse problema, atualize a versão da lib para 0.7v pois esse problema foi corrigido, a versão 0.6v apresentava essa falha. (Consulte o changelog na documentação com caracteristicas das versões)
 
 
 Changelog
 ---------
+0.8
+ - Correções de bugs
+ - Ajuste componente NumberPicker, inicia com a data (mês/ano) atual.
+
 0.7
  - Correções de bugs
  - Ajuste componente NumberPicker
@@ -203,10 +231,12 @@ Notas
  - Para que ocorra normalmente a geração de logs, certifique-se que o diretório e o arquivo de log tenham permissões de leitura e escrita.
 
 
-[Dúvidas?]
+Dúvidas?
 ----------
 
-Em caso de dúvidas mande um e-mail para desenvolvedores@pagseguro.com.br
+Caso tenha dúvidas ou precise de suporte, acesse nosso [fórum] ou
+mande um e-mail para desenvolvedores@pagseguro.com.br
+
 
 
 Contribuições
@@ -218,12 +248,20 @@ Achou e corrigiu um bug ou tem alguma feature em mente e deseja contribuir?
 * Adicione sua feature ou correção de bug.
 * Envie um pull request no [GitHub].
 
-  [1]: https://raw.githubusercontent.com/pagseguro/android/mvn-repo/br/com/uol/ps/library/0.4/library-0.4.jar
+  [1]: https://raw.githubusercontent.com/pagseguro/android/mvn-repo/br/com/uol/ps/library/0.7/library-0.7.jar
   [Android]: http://www.android.com/
   [GSon]: https://code.google.com/p/google-gson/
   [fórum]: http://forum.pagseguro.uol.com.br/
   [GitHub]: https://github.com/pagseguro/php/
   
+  
+* **
+
+**UOL - O melhor conteúdo**
+
+© 1996-2015 O melhor conteúdo. Todos os direitos reservados.
+UNIVERSO ONLINE S/A - CNPJ/MF 01.109.184/0001-95 - Av. Brigadeiro Faria Lima, 1.384, São Paulo - SP - CEP 01452-002 
+* **
   
  
 
